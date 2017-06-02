@@ -17,6 +17,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class ViewBuscarPalavra extends JFrame {
 
@@ -46,6 +47,7 @@ public class ViewBuscarPalavra extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(230, 230, 250));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -69,6 +71,8 @@ public class ViewBuscarPalavra extends JFrame {
 		contentPane.add(labelQuant);
 
 		JButton btnBuscar = new JButton("Buscar");
+		btnBuscar.setForeground(new Color(245, 245, 245));
+		btnBuscar.setBackground(new Color(112, 128, 144));
 		btnBuscar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Arquivo a = new Arquivo();

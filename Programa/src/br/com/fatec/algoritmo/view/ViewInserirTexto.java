@@ -47,6 +47,7 @@ public class ViewInserirTexto extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(230, 230, 250));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -64,6 +65,8 @@ public class ViewInserirTexto extends JFrame {
 		contentPane.add(lblMensagem);
 
 		JButton btnSalvar = new JButton("Salvar");
+		btnSalvar.setBackground(new Color(112, 128, 144));
+		btnSalvar.setForeground(new Color(245, 245, 245));
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Arquivo a = new Arquivo();
